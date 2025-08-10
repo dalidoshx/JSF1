@@ -228,4 +228,27 @@ if (BMIMark > BMIJohn) {
 } else {
   console.log(`John's BMI (${BMIJohn}) is higher than Marks's (${BMIMark})!`)
 }
- */
+ 
+
+// type conversion
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number('Jonas')); // NaN
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+//type coercion
+console.log('I am ' + 23 + ' years old'); // coerces number to string
+console.log('23' - '10' - 3); // coerces strings to numbers
+console.log('23' + '10' + 3); // coerces numbers to strings
+console.log('23' * '2'); // coerces strings to numbers
+console.log('23' / '2'); // coerces strings to numbers
+
+let n = '1' + 1; // 11 -> coerces number to string
+n = n - 1; // 10 -> coerces string to number
+console.log(n); // 10
+
+*/
